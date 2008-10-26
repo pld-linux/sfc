@@ -9,7 +9,6 @@ Source0:	http://personal.telefonica.terra.es/web/soudfontcombi/%{name}-%{version
 # Source0-md5:	14fc67d9e2b5c922c6b848f9b9960dd5
 URL:		http://personal.telefonica.terra.es/web/soudfontcombi/soundfontcombi.html
 BuildRequires:	alsa-lib-devel
-BuildRequires:	autoconf >= 2.58
 BuildRequires:	fltk-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -45,7 +44,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS COPYING ChangeLog NEWS README
+%doc AUTHORS ChangeLog NEWS README
 %attr(755,root,root) %{_bindir}/sfc
 %dir %{_datadir}/sfc
 %{_datadir}/sfc/*
